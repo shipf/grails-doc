@@ -22,7 +22,7 @@ new File("${GRAILS_HOME}/build.properties").withInputStream {input ->
 title = props.title
 version = props."grails.version"
 authors = props.author
-
+println "3"
 def compare = [equals: { false },
                compare: {o1, o2 ->
     def idx1 = o1.name[0..o1.name.indexOf(' ') - 1]
